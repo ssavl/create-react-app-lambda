@@ -1,0 +1,74 @@
+@import "../../theme/_mixins"
+
+
+.PersonalAccount
+  color: blue
+  text-align: center
+  @include font-22
+  border: 2px solid blue
+  border-radius: 50px
+  padding: 20px 20px
+  margin: 50px 30px 0
+
+  &__avatar
+    display: flex
+    justify-content: center
+    align-items: center
+    border-radius: 50%
+    background: transparent
+    border: 2px solid blue
+    width: 80px
+    height: 80px
+    cursor: pointer
+    overflow: hidden
+    & text
+      position: absolute
+      left: -30px
+      font-size: 1px
+    & img
+      width: 100%
+
+
+  &__info
+    color: blue
+    text-align: left
+    border: 2px solid blue
+    border-radius: 50px
+    padding: 20px 20px
+    margin: 30px 30px 0
+    & hr
+      background: blue
+      height: 1px
+      border: none
+
+  &__username
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding: 20px 20px
+    text-align: left
+    margin: 20px 20px
+    @include font-28
+
+  &__info-item
+    padding: 20px 20px
+    text-align: left
+    margin: 20px 20px
+    @include font-16
+
+  &__add-item
+    display: grid
+    grid-template-columns: 1fr 1fr
+    column-gap: 30px
+    padding: 20px 20px
+    text-align: left
+    margin: 20px 20px
+    @include font-16
+
+  &__blog-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    column-gap: 5px
+    margin: 50px 0
+
+
